@@ -19,12 +19,12 @@ And the following example shows the way a custom exception is used is nothing di
 public class StudentManager { </br>
  
     public Student find(String studentID) throws StudentNotFoundException { </br>
-        if (studentID.equals("123456")) { </br>
-            return new Student(); </br>
-        } else { </br>
+        if (studentID.equals("123456")) { 
+            return new Student(); 
+        } else { 
             throw new StudentNotFoundException( </br>
                 "Could not find student with ID " + studentID); </br>
-        } </br>
+        } 
     }
 } </br>
 And the following test program handles that exception: </br>
